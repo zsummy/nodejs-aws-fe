@@ -8,12 +8,12 @@
     "eject": "react-scripts eject",
     "build": "react-scripts build",
     "cl:deploy": "sls client deploy --no-config-change --no-policy-change --no-cors-change --no-confirm",
-    "cl:build:deploy": "npm run build && npm run cl:deploy",
+    "cl:build:deploy": "yarn build && yarn cl:deploy",
     "cf:setup": "sls deploy",
     "cf:domainInfo": "sls domainInfo",
     "cf:invalidateCache": "sls invalidateCloudFrontCache",
-    "cf:build:deploy": "npm run cl:build:deploy && npm run cf:invalidateCache",
-    "cf:update:build:deploy": "npm run cf:setup && npm run cf:build:deploy"
+    "cf:build:deploy": "yarn cl:build:deploy && yarn cf:invalidateCache",
+    "cf:update:build:deploy": "yarn cf:setup && yarn cf:build:deploy"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
