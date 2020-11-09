@@ -34,8 +34,6 @@ custom:
   client:
     bucketName: nodejs-app-fe
     distributionFolder: build
-    indexDocument: index.html
-    errorDocument: error.html
 
   s3LocalPath: ${self:custom.client.distributionFolder}/
   s3BucketName: ${self:custom.client.bucketName}
@@ -48,6 +46,7 @@ resources:
       Type: AWS::S3::Bucket
       Properties:
         BucketName: ${self:custom.s3BucketName}
+        AccessControl: PublicRead
         WebsiteConfiguration:
           IndexDocument: index.html
           ErrorDocument: index.html
