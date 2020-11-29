@@ -8,13 +8,21 @@ import * as serviceWorker from './serviceWorker';
 import CssBaseline from "@material-ui/core/CssBaseline";
 import axios from 'axios';
 
+localStorage.setItem('login', 'zsummy');
+localStorage.setItem('password', 'TEST_PASSWORD');
+
 axios.interceptors.response.use(
   response => {
     return response;
   },
   function(error) {
-    if (error.response?.status === 400) {
+    const status = error.response?.status;
+    if (status === 400) {
       alert(error.response.data?.data);
+    } else if (status === 401) {
+      alert('Unauthorized');
+    } else if (status === 403) {
+      alert('Forbidden');
     }
     return Promise.reject(error.response);
   }
