@@ -8,8 +8,8 @@ import * as serviceWorker from './serviceWorker';
 import CssBaseline from "@material-ui/core/CssBaseline";
 import axios from 'axios';
 
-localStorage.setItem('login', 'zsummy');
-localStorage.setItem('password', 'TEST_PASSWORD');
+// localStorage.setItem('login', 'zsummy');
+// localStorage.setItem('password', 'TEST_PASSWORD');
 
 axios.interceptors.response.use(
   response => {
