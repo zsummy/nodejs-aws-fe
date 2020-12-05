@@ -1,8 +1,8 @@
 const API_PATHS = {
-  product: 'https://axes4hauza.execute-api.eu-west-1.amazonaws.com/dev',
+  product: 'https://6e3iol5e2i.execute-api.eu-west-1.amazonaws.com/dev',
   order: 'https://.execute-api.eu-west-1.amazonaws.com/dev',
-  import: 'https://dxjbu07glf.execute-api.eu-west-1.amazonaws.com/dev',
-  bff: 'https://axes4hauza.execute-api.eu-west-1.amazonaws.com/dev'
+  import: 'https://319e3qh7b0.execute-api.eu-west-1.amazonaws.com/dev',
+  bff: 'https://6e3iol5e2i.execute-api.eu-west-1.amazonaws.com/dev'
 };
 
 /*
