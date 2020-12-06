@@ -3,8 +3,7 @@ const API_PATHS = {
   order: 'https://.execute-api.eu-west-1.amazonaws.com/dev',
   import: 'https://319e3qh7b0.execute-api.eu-west-1.amazonaws.com/dev',
   bff: 'https://6e3iol5e2i.execute-api.eu-west-1.amazonaws.com/dev',
-  // cart: 'https://.execute-api.eu-west-1.amazonaws.com/dev',
-  cart: 'http://localhost:4000/api',
+  cart: 'https://tgotxdbyak.execute-api.eu-west-1.amazonaws.com/dev/api',
 };
 
 /*
